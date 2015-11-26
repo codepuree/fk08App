@@ -1,2 +1,59 @@
-﻿body {
+﻿/* Reset all css rules */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* Hole site size */
+html {
+}
+
+/* Rules for body */
+body {
+    background-color: Highlight;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+    /* Header with app titel */
+    body > header {
+        width: 100vw;
+        padding: 2vh;
+        text-align: center;
+        background-color: #ff0000;
+        color: white;
+    }
+
+    /* Main app content */
+    body > main {
+        flex: 1;
+    }
+
+    /* Temporary footer with console input */
+    body> footer {
+        width: 100vw;
+        background-color: #ff0000;
+    }
+
+        body> footer> #console {
+            width: 100vw;
+            max-height: 100px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background: white;
+            color: gray;
+        }
+
+        body>footer> form {
+            background-color: #ff0000;
+        }
+
+        body>footer>#inConsole {
+            width: 100%;
+        }
+
+        body>footer>#btnConsole {
+            width: 50px;
+        }

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <meta charset="utf-8" />
 
@@ -14,12 +14,38 @@
     <link href="css/index.css" rel="stylesheet" />
 </head>
 <body>
-    <p>Hello, your application is ready!</p>
+
+    <header>
+        <!-- Here comes the title of the app -->
+        <h1>Fakultät 08</h1>
+    </header>
+
+    <main>
+        <!-- Here a coming the posts -->
+        <div>
+            <p>Test content</p>
+        </div>
+    </main>
+
+    <footer>
+        <!-- This part is tempory and contains an console input field -->
+        <hr />
+        <div id="console"></div>
+        <form id="console">
+            <input type="text" id="inConsole" placeholder="Enter your commands here" />
+            <input type="button" id="btnConsoleRun" value="Run" />
+            <input type="button" id="btnConsoleClear" value="X" />
+        </form>
+    </footer>
 
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
     <script src="scripts/platformOverrides.js"></script>
 
+    <!-- Additional scripts -->
+    <script src="scripts/debug.js"></script>
+
+    <!-- Main page script -->
     <script src="scripts/index.js"></script>
 </body>
 </html>
