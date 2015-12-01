@@ -6,8 +6,11 @@
     <!--
         Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
         For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: /images/icon-36-ldpi.png 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0, user-scalable=no;user-scalable=0;" />
+
     <title>fk08App</title>
 
     <!-- fk08App references -->
@@ -22,9 +25,17 @@
 
     <main>
         <!-- Here a coming the posts -->
-        <div>
-            <p>Test content</p>
-        </div>
+            <div class="post">
+                <header>
+                    <h2>Test post</h2>
+                </header>
+                <hr />
+                <main>Content of the post</main>
+                <hr />
+                <footer>
+                    <pre>Letzte Aktualisierung: </pre><span></span>
+                </footer>
+            </div>
     </main>
 
     <footer>
@@ -38,12 +49,42 @@
         </form>
     </footer>
 
+    <!-- Templates -->
+    <template id="tmpPost">
+        <div class="post">
+            <header>
+                <h2></h2>
+                <img class="icon" src="images/icons/iconDelete.svg" />
+            </header>
+            <hr />
+            <main></main>
+            <hr />
+            <footer>
+                <span>Letzte Aktualisierung: </span><span></span>
+            </footer>
+        </div>
+    </template>
+
+    <template id="tmpFeed">
+        <div class="feed">
+            <header></header>
+            <main></main>
+            <footer></footer>
+        </div>
+    </template>
+
     <!-- Cordova reference, this is added to your app when it's built. -->
     <script src="cordova.js"></script>
     <script src="scripts/platformOverrides.js"></script>
 
+    <!-- Development only stuff -->
+    <script src="scripts/dev.js"></script>
+
     <!-- Additional scripts -->
+    <script src="scripts/extesions.js"></script>
     <script src="scripts/debug.js"></script>
+    <script src="scripts/storageManagement.js"></script>
+    <script src="scripts/parse.js"></script>
 
     <!-- Main page script -->
     <script src="scripts/index.js"></script>
