@@ -20,7 +20,7 @@ Entwickelt wird die App zur Zeit von der [Fachschaft 08](http://fachschaft08.de/
 - Automatisches Setzen des Lautlos-Modus am Smartphone zu Vorlesungsbeginn
 
 ## Wie kann ich die App kompilieren?
-Momentan wird die App mit dem Appache Cordova Update 4 Addon in Visual Studio 2015 Communnity entwickelt. Alternativ lässt sich aber auch die App mit dem Command-Line-Interface für Cordova entwickeln.
+Momentan wird die App mit dem Apache Cordova Update 4 Addon in Visual Studio 2015 Communnity entwickelt. Alternativ lässt sich aber auch die App mit dem Command-Line-Interface für Cordova entwickeln.
 
 ### Wie installiere ich das Visual Studio Addon?
 Der einfachste Weg führt über "Neues Projekt"->Installiert->Vorlagen->Javascript->"Apache Cordova" jetzt erscheint dann ein Installations-Wizard in dem man die Installation bestätig.
