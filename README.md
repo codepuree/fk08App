@@ -24,3 +24,6 @@ Momentan wird die App mit dem Apache Cordova Update 4 Addon in Visual Studio 201
 
 ### Wie installiere ich das Visual Studio Addon?
 Der einfachste Weg führt über "Neues Projekt"->Installiert->Vorlagen->Javascript->"Apache Cordova" jetzt erscheint dann ein Installations-Wizard in dem man die Installation bestätig.
+
+## Was muss ich beachten, wenn ich mich beteiligen möchte
+Um einen guten und verständlichen Code zu schreiben ist es ratsam den Programmierkonventionen die in [ProgrammingGuidelines.md](ProgrammingGuidelines.md) beschrieben sind zu befolgen.
